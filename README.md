@@ -1,30 +1,39 @@
-# 🌙 Loja de Poções da Lua Mística
+# 🧪 Mystic Moon Potion Shop
 
-Bem-vindo à **Loja de Poções da Lua Mística** 🧙‍♂️✨  
+Bem-vindo à **Mystic Moon Potion Shop** 🌙✨  
 
-Este é um projeto simples desenvolvido em **Lua**, criado com o objetivo de praticar os **conceitos básicos de programação**, como variáveis, tipos de dados, operadores matemáticos e concatenação de strings.
+Este projeto foi desenvolvido em **Lua** como um exercício de programação, simulando o sistema de uma loja de poções. O objetivo é praticar conceitos como:
 
-O sistema simula uma loja de poções e gera um **recibo detalhado** para cada compra, calculando automaticamente o subtotal, o imposto e o valor total a pagar.
+- Variáveis
+- Operadores aritméticos
+- Concatenação de strings
+- Formatação de valores
+- Impressão de recibos detalhados
+
+O sistema gera um **recibo profissional**, mostrando todos os itens comprados, subtotal, imposto e total final.
 
 ---
 
 ## 📖 Descrição do Projeto
 
-Como um programador iniciante recém-chegado à cidade, você foi recrutado para ajudar a Loja de Poções da Lua Mística a organizar suas vendas.
+O programa simula a compra de poções especiais, cada uma com seu preço e descrição. O recibo do cliente mostra:
 
-Neste projeto, o foco não é criar um sistema complexo, mas sim **aprender e aplicar fundamentos essenciais da linguagem Lua**, construindo um programa funcional e fácil de entender.
+1. Lista de itens adquiridos  
+2. Subtotal da compra  
+3. Imposto aplicado (7%)  
+4. Total final a pagar  
+
+É uma ótima forma de aprender a **organizar dados e gerar saídas formatadas** em Lua.
 
 ---
 
 ## 🧪 Funcionalidades
 
-- Cadastro simples de uma poção
-- Definição de preço e quantidade
+- Cadastro de múltiplas poções
 - Cálculo automático do subtotal
-- Aplicação de imposto sobre a compra
-- Cálculo do valor total
-- Geração de um recibo formatado no terminal
-- Valores monetários exibidos com duas casas decimais
+- Aplicação de imposto (7%)  
+- Recibo formatado no terminal
+- Exibição de valores monetários com duas casas decimais
 
 ---
 
@@ -36,7 +45,7 @@ Neste projeto, o foco não é criar um sistema complexo, mas sim **aprender e ap
 
 ## 📂 Estrutura do Projeto
 
-loja-pocoes-lua/
+mystic-moon-potions/
 │
-├── main.lua # Código principal do sistema
+├── main.lua # Código principal da loja
 └── README.md # Documentação do projeto
