@@ -1,24 +1,40 @@
--- Dados da poção
-nome_pocao = "Poção de Cura Lunar"
-preco_unitario = 25.50
-quantidade = 2
+-- Poções disponíveis
+debugPotionDescription = "Debug Potion - An expulsion type potion, great for evicting bugs."
+debugPotionPrice = 404
 
--- Cálculos
-subtotal = preco_unitario * quantidade
-taxa_imposto = 0.08
-valor_imposto = subtotal * taxa_imposto
-total = subtotal + valor_imposto
+loopPotionDescription = "Loop Potion - A repetition type potion, effective for menial tasks."
+loopPotionPrice = 222
+
+bytePotionDescription = "Byte Potion - A healing potion. Used to salve bites."
+bytePotionPrice = 101
+
+-- Imposto
+salesTax = 0.07
+
+-- Dados do cliente
+customerTotal = 0
+customerItemization = ""
+
+-- Adicionando itens ao carrinho
+customerTotal = customerTotal + debugPotionPrice
+customerItemization = customerItemization .. debugPotionDescription .. "\n"
+
+customerTotal = customerTotal + bytePotionPrice
+customerItemization = customerItemization .. bytePotionDescription .. "\n"
+
+-- Cálculo do imposto e total final
+addedTax = customerTotal * salesTax
+finalTotal = customerTotal + addedTax
 
 -- Recibo
-print("🌙==============================🌙")
-print("   Loja de Poções da Lua Mística")
-print("🌙==============================🌙")
-print("Item: " .. nome_pocao)
-print("Quantidade: " .. quantidade)
-print("Preço unitário: R$ " .. string.format("%.2f", preco_unitario))
-print("Subtotal: R$ " .. string.format("%.2f", subtotal))
-print("Imposto (8%): R$ " .. string.format("%.2f", valor_imposto))
+print("🧪==============================🧪")
+print("   Mystic Moon Potion Shop")
+print("🧪==============================🧪")
+print("Customer Item(s):")
+print(customerItemization)
 print("--------------------------------")
-print("Total a pagar: R$ " .. string.format("%.2f", total))
+print("Subtotal: $ " .. string.format("%.2f", customerTotal))
+print("Tax (7%): $ " .. string.format("%.2f", addedTax))
+print("Total: $ " .. string.format("%.2f", finalTotal))
 print("--------------------------------")
-print("✨ Obrigado pela sua visita, viajante! ✨")
+print("✨ Thank you for your purchase! ✨")
